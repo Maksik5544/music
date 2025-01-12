@@ -143,7 +143,7 @@ nav a {
   justify-content: space-around;
 }
 
-.control>button {
+.control>button, .track-buttons>button {
   margin: 2.5rem;
   width: 2.7rem;
   height: 2.7rem;
@@ -158,7 +158,7 @@ nav a {
   color: #6b6b6e;
 }
 
-.control>button>img {
+.control>button>img, .track-buttons>button>img{
   width: 1.6rem;
   height: 1.6rem;
 }
