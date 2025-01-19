@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="style-book.css">
   <title>Music</title>
 </head>
 <body>
 
 
   <header>
+    <div class="menu">
     <img src="img/MP.png" width="53px", height="80px">
     <nav>
       <a href="#">HOME</a>
@@ -18,14 +18,16 @@
       <a href="#">ABOUT</a>
       <a href="#">STORE</a>
     </nav>
+    </div>
 
 
-    <div class="text">
-      <h1>MUSIC
+    <span class="text">
+      <h1>
+      MUSIC
       PLAYER</h1>
       <p>American company formed in<br>
         2002 in Boston, Massachusetts</p>
-    </div>
+      </span>
 
 
     <div class="device">
@@ -43,10 +45,10 @@
           </div>
 
 
-          <div class="name">
-            <h2 class="track-name"></h2>
-            <h3 class="artist-name"></h3>
-          </div>
+          <span class="name">
+            <h2 class="track-name">Name track</h2>
+            <h3 class="artist-name">Name artist</h3>
+          </span>
           <div class="lable">
             <div class="wrapper">
               <div class="track-image"></div>
@@ -56,11 +58,16 @@
             <div class="track-buttons">
               <button class="back"><img src="img/icons8-back-64.png"></button>
               <button class="play"><img src="img/icons8-play-50.png"></button>
-              <button class="stop"><img src="img/icons8-pause-48.png"></button>
               <button class="forward"><img src="img/icons8-forward-64.png"></button>
             </div>
 
-            <div></div>
+            <progress value="33%" max="100%"></progress>
+            <div class="device-footer-buttons">
+              <button class="home-buttons"><img src="img/icons8-главная-24.png"></button>
+              <button class="random-buttons"><img src="img/icons8-перемешать-48.png"></button>
+              <button class="heart-buttons"><img src="img/icons8-сердце-50.png"></button>
+              <button class="settings-buttons"><img src="img/icons8-настройки-50.png"></button>
+            </div>
           </div>
         </div>
         <div class="device-power"></div>
@@ -68,9 +75,165 @@
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <div class="main_top">
+      <p>Music</p>
 
-  <footer></footer>
+      <div class="alboms">
+        <button>Listen NOW</button>
+        <button>Find a song...</button>
+      </div>
+
+      <img src="img/seyi-ariyo-6YgYRcyQK_s-unsplash-PhotoRoom 1.png"></div>
+    
+    </div>
+    <div class="main_mid">
+      <p>About</p>
+      <p>MusicPlayer gives you instant access to millions of songs - fron old<br>
+        favorites to the latest hits. Just hit play to stream anything you like.</p>
+      </div>
+    <div class="main_footer">
+      <p>Store</p>
+      <div class="download_mac">
+        <button>Download Windows x64</button>
+        <button>Download MacOS</button>
+        <span>
+          <h2>Нужна предыдущая версия MPlauer?</h2>
+          <p>Вы можите скачать одну из предыдущих<br>
+            версий MPlauer, которая совместима с<br> 
+            нужной вам версией операционной системы<br>
+            и определенными устройствами.</p>
+          <a href="#">Выбериете предыдущую версию MPlauer</a>
+        </span>
+      </div>
+      <div class="book">
+        <div class="device-book">
+          <div class="book_display">
+            <div class="display_player">
+              <p>Music Player</p>
+            </div>
+            <div class="display_track">
+              <div class="display_wrapper">
+                <div class="display_track_img"></div>
+              </div>
+              <div class="display_track_time">
+                <p>Your Music <span>- Artist</span></p>
+                <progress value="33%" max="100%"></progress>
+              </div>
+            </div>
+            <div class="display_nav">
+              <form class="search">
+                <input type="search" placeholder="Поиск">
+              </form>
+              <ul>
+                <li><button>Для вас</button></li>
+                <li><button>Песни</button></li>
+                <li><button>Артисты</button></li>
+                <li><button>Альбоиы</button></li>
+                <li><button>Store</button></li>
+              </ul>
+            </div>
+            <div class="display_alboms">
+              <div class="alboms_button">
+                <button></button>
+                <button></button>
+              </div>
+              <div class="container_alboms">
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+                <div class="alboms">
+                  <img src="">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="display_controllers">
+              <div class="controllers_setting">
+                <button></button>
+                <button></button>
+                <button></button>            
+              </div>
+              <div class="controllers_play">
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+              <form>
+                <input type="range" min="1" max="100">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="book-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_top">
+      <div class="section_top">
+        <h3><a href="#">MPlayer Store</a></h3>
+        <a href="#">Варианты оплаты</a>
+        <a href="#">Состояние заказа</a>
+        <a href="#">Помощь при покупке</a>
+      </div>
+      <div class="section_top">
+        <h3><a href="#">Ценности MPlayer</a></h3>
+        <a href="#">Универсальный доступ</a>
+        <a href="#">Окружающая среда</a>
+        <a href="#">Конфиденциальность</a>
+      </div>
+      <div class="section_top">
+        <h3><a href="#">Учётная запись</a></h3>
+        <a href="#">Управление вашим MPlayer ID</a>
+        <a href="#">Учётная запись MPlayer Store</a>
+      </div>
+    </div>
+    <div class="footer_bot">
+      <div class="section_bot">
+        <h1>MUSIC<br>
+            PLAYER</h1>
+        <p>© MPlayer Inc., 2022 г. Все права защищены.</p>
+      </div>
+      <a href="#">Условия использования</a>
+      <a href="#">Продажа и возврат</a>
+      <a href="#">Юридическая информация</a>
+    </div>
+  </footer>
   
 </body>
 </html>
