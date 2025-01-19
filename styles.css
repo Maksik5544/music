@@ -191,7 +191,9 @@ h1, p {
 
 .control>button>img,
 .track-buttons>button>img,
-.device-footer-buttons>button>img{
+.device-footer-buttons>button>img,
+.display_controllers>.controllers_setting>button>img,
+.display_controllers>.controllers_play>button>img {
   width: 1.5rem;
   height: 1.5rem;
   margin: auto;
@@ -493,11 +495,74 @@ progress {
 .display_alboms {
   grid-area: display_alboms;
   background-color: #272727;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display_alboms .alboms_button button {
+  width: 4.25rem;
+  height: 1.2rem;
+  margin: 7px;
+}
+
+.container_alboms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px 2.5rem;
+  margin: 5px;
+}
+
+.container_alboms .alboms img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.alboms h3, .alboms p {
+  color: white;
+  margin: 5px 0 5px 0;
+}
+
+.alboms h3 {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: .06875rem;
+}
+
+.alboms p {
+  font-size: 7px;
 }
 
 .display_controllers {
   grid-area: display_controllers;
+  justify-content: space-around;
   background-color: #272727;
+}
+
+.display_controllers .controllers_setting,
+.display_controllers .controllers_play,
+.display_controllers form {
+  margin-top: 7px;
+}
+
+.display_controllers .controllers_setting button {
+  margin: 0;
+  width: 2.7rem;
+  height: 2.7rem;
+  background: radial-gradient(farthest-corner at 50%, #2a292b 10%, #131212d8 90%, transparent 50%);
+  border: #1a1a1a solid 2px;
+  border-radius: 50%;
+  box-shadow: 6px 0px 70px #aeacb17e;
+}
+
+.display_controllers .controllers_play button {
+  margin: 0;
+  width: 2.7rem;
+  height: 2.7rem;
+  background: radial-gradient(farthest-corner at 50%, #2a292b 10%, #131212d8 90%, transparent 50%);
+  border: #1a1a1a solid 2px;
+  border-radius: 50%;
+  box-shadow: 6px 0px 70px #aeacb17e;
+
 }
 
 .device-book::before {
