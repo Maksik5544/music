@@ -1,6 +1,5 @@
 body {
   position: relative;
-  max-width: 1440px;
   margin: auto;
 }
 
@@ -20,11 +19,6 @@ div {
   margin-right: 15rem;
 }
 
-@media (max-width: 1010px) {
-  .menu>img {
-    margin-right: 10rem;
-  }
-}
 
 nav {
   margin-top: 1rem;
@@ -42,6 +36,15 @@ nav a {
   justify-content: space-between;
 }
 
+@media (max-width: 1145px) {
+  .menu>img {
+    margin-right: 10rem;
+  }
+  .header_info {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 950px) {
   .menu>img {
     margin-right: 10rem;
@@ -49,17 +52,18 @@ nav a {
 }
 
 .info {
+  max-height: 30rem;
   max-width: 34rem;
   margin-top: 12rem;
-  display: block;
   justify-content: center;
   text-align: center;
+  margin-right: 1rem;
 }
 
 .info>h1 {
   font-family: Showcard Gothic;
-  font-size: 15vh;
-  line-height: 7.6rem;
+  font-size: 1000%;
+  line-height: 8rem;
   margin: 0;
 }
 
@@ -70,15 +74,15 @@ nav a {
   margin-right: 0;
 }
 
-.info>h1,
-.info>p {
+h1,
+p {
   max-width: 40rem;
   color: white;
 }
 
 .device {
   position: relative;
-  right: 5%;
+  margin-right: 2rem;
   top: 3%;
   width: 27.3rem;
   height: 53.125rem;
@@ -274,7 +278,6 @@ progress {
 
 
 .main_top {
-  flex-wrap: nowrap;
   background: #D53005;
   height: 64em;
   padding: 3rem 0 0 7.6rem;
@@ -284,12 +287,24 @@ progress {
   font-size: 2rem;
 }
 
-.main_top>img {
-  margin-right: 0;
-  margin-top: 9rem;
+.main_top section {
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.main_top section img {
   width: 62.5rem;
-  height: 41.62rem;
-  overflow: auto;
+}
+
+@media (max-width: 1123px) {
+  .main_top section img {
+    position: absolute;
+    width: 40rem;
+    right: 0;
+    top: 38.5%;
+  }
 }
 
 .alboms {
@@ -314,27 +329,36 @@ progress {
 }
 
 .main_mid {
-  padding: 10rem 0 0 7.5rem;
-  display: block;
+  flex-direction: column;
   height: 64em;
   background: linear-gradient(to bottom, #D53005, black 10%);
 }
 
 .main_mid>p {
-  margin: 0;
+  margin: 10rem 0 0 7.5rem;
   font-size: 2rem;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 40rem;
+  margin: auto;
 }
 
 .main_mid>p+p {
   text-align: center;
-  padding-top: 29%;
-  font-size: 2rem;
+  padding-top: 12%;
+  margin-left: 37%;
 }
 
 .main_footer {
+  flex-direction: column;
   background: #D53005;
   padding: 0 0 0 2rem;
 }
+
 
 .main_footer>p {
   font-size: 2rem;
@@ -342,8 +366,25 @@ progress {
   margin: 5rem 0 5rem 7.5rem;
 }
 
-.download_mac {
+section {
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1405px) {
+  .main_footer_book {
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+  .download_mac, .version {
+    align-items: center;
+  }
+}
+
+.download_mac, .version {
   flex-direction: column;
+  text-align: center;
 }
 
 .download_mac>button {
@@ -373,18 +414,17 @@ progress {
   color: black;
 }
 
-.download_mac>span {
+.download_mac>.version {
   text-align: center;
 }
 
-.download_mac>span>p,
-.download_mac>span>a {
+.download_mac>.version>p,
+.download_mac>.version>a {
   font-size: 1.125rem;
 }
 
 .book {
   width: 50rem;
-  margin: 0 0 7rem auto;
   position: relative;
   box-sizing: border-box;
 }
@@ -721,17 +761,23 @@ footer a {
 }
 
 .footer_bot {
+  flex-wrap: nowrap;
   align-items: end;
-  justify-content: end;
+  justify-content: space-between;
 }
 
-.footer_bot>a {
+.footer_bot a, .section_bot a {
   margin: 1rem 4rem;
 }
 
-.section_bot {
+
+.rights {
   flex-direction: column;
-  margin: 0 5rem;
+  margin: 0 0 0 7.6rem;
+}
+
+.section_bot {
+  flex-wrap: nowrap;
 }
 
 .section_bot>h1 {
